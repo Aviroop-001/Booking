@@ -50,7 +50,7 @@ function DatePick() {
         width: "100%",
         backgroundColor: "white",
         height: "3rem",
-        border: "1px solid blue",
+        border: "0.5px solid black",
       }}
       onClick={onClick}
       ref={ref}
@@ -99,6 +99,7 @@ function DatePick() {
               height="3rem"
               margin="0"
               borderRadius="0"
+              border='0.5px solid black'
             >
               {adults} Adults, {children} Child, {rooms} Rooms
             </Button>
@@ -138,6 +139,7 @@ function DatePick() {
                   </NumberInputStepper>
                 </NumberInput>
               </Box>
+              <Button width='100%' fontSize='1.2rem' backgroundColor='blue.100' margin='1rem auto'>Done</Button>
             </PopoverBody>
           </PopoverContent>
         </Popover>

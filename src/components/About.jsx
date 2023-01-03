@@ -23,6 +23,20 @@ function About() {
         alignItems="center"
         justifyContent="space-around"
         padding="3rem"
+        position='relative'
+        _before={{
+          content: '""',
+          bgImage:
+            "url(https://png.pngtree.com/png-clipart/20191121/original/pngtree-v-arrow-logo-design-png-image_5157117.jpg)",
+          bgSize: "cover",
+          pos: "absolute",
+          height: '10rem',
+          width: '10rem',
+          opacity: 1,
+          borderRadius: '50%',
+          left: '12rem',
+          bottom: '6rem'
+        }}
       >
         <Image
           src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
