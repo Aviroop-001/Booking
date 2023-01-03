@@ -36,7 +36,7 @@ function DatePick() {
         width: "100%",
         backgroundColor: "white",
         height: "3rem",
-        border: "1px solid blue",
+        border: "0.5px solid black",
       }}
       onClick={onClick}
       ref={ref}

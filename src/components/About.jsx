@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Link, Text } from "@chakra-ui/react";
 import {
   List,
   ListItem,
@@ -51,17 +51,30 @@ function About() {
         </Box>
       </Box>
       <Box marginLeft="4rem" marginRight="4rem">
-        <Text fontSize='1.3rem' fontWeight='bold'>Hotel Vishal @Airport</Text>
-        <Text>
-          104/2/2 New Highway, MaheshPlace, New Delhi, 110037, Delhi, India
-        </Text>
-        <Text fontWeight='bold'>+91-0987654321, 033-1212 3434</Text>
-        <UnorderedList display="flex" width="60%" justifyContent="space-evenly">
-          <ListItem>&#9830;Free Parking</ListItem>
-          <ListItem>&#9830;Conference Room</ListItem>
-          <ListItem>&#9830;ATM</ListItem>
-          <ListItem>&#9830;Gym</ListItem>
-        </UnorderedList>
+        <Box display='flex' justifyContent='space-between'>
+          <Box>
+            <Text fontSize="1.3rem" fontWeight="bold">
+              Hotel Vishal @Airport
+            </Text>
+            <Text>
+              104/2/2 New Highway, MaheshPlace, New Delhi, 110037, Delhi, India. <Link color='blue'>see in map</Link>
+            </Text>
+            <Text fontWeight="bold">+91-0987654321, 033-1212 3434</Text>
+            <br/>
+            <UnorderedList
+              display="flex"
+              justifyContent="space-evenly"
+            >
+              <ListItem>&#9830;Free Parking</ListItem>
+              <ListItem>&#9830;Conference Room</ListItem>
+              <ListItem>&#9830;ATM</ListItem>
+              <ListItem>&#9830;Gym</ListItem>
+            </UnorderedList>
+          </Box>
+          <Box>
+          <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Delhi&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </Box>
+        </Box>
         <Box>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non
           necessitatibus iste? Tempore voluptatum officia nobis minus at unde,
